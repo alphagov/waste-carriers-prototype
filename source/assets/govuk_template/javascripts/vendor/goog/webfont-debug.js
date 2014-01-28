@@ -13,6 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 var webfont = {};
 
 /**
@@ -2122,3 +2123,4 @@ window['WebFont'].addModule(webfont.TypekitScript.NAME, function(configuration) 
 if (window['WebFontConfig']) {
   window['WebFont']['load'](window['WebFontConfig']);
 }
+;
