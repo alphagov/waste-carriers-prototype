@@ -20,9 +20,9 @@
 # page "/path/to/file.html", :layout => :otherlayout
 #
 # A path which all have the same layout
- with_layout :govuk_template do
-   page "/*"
- end
+
+page "index.html", :layout => :blank_template
+page "/v1/*", :layout => :v1_template
 
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
@@ -45,11 +45,11 @@
 #   end
 # end
 
-set :css_dir, 'stylesheets'
+set :css_dir, '.'
 
 set :js_dir, 'javascripts'
 
-set :images_dir, 'images'
+set :images_dir, '.'
 
 # Build-specific configuration
 configure :build do
@@ -63,7 +63,8 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
+  set :relative_links, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

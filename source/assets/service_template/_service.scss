@@ -1,0 +1,79 @@
+// Service specific styles
+
+
+
+// Phase banner
+
+#phase-banner{
+  @include phase-banner(beta)
+}
+
+// Postcode lookup
+
+#postcode-lookup{
+  margin-right: $gutter-third;
+}
+
+// Link style
+
+%link-style,
+.link-style {
+    display: inline;
+    color: $link-colour;
+    -webkit-appearance:none;
+    background: none;
+    border: none;
+    text-decoration: underline;
+  &:hover {
+    color: $link-hover-colour;
+    cursor: pointer;
+  }
+}
+
+
+// Two column definition lists
+
+dl.two-col{
+  @extend %contain-floats;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  dt{
+    float: left;
+    width: 16%;
+  }
+  dd{
+    float: left;
+    margin-left: 0;
+    width: 84%;
+  }
+}
+
+// Check and edit details panels
+
+.check-details{
+  margin-bottom: $gutter;
+  .edit-details{
+    @include core-16;
+  }
+}
+
+// Legal alert
+
+.legal-alert{
+  border-top: 1px solid $border-colour; 
+  background: url(/assets/service_template/icon-important.png) no-repeat scroll 0 $gutter;
+  padding-left: 45px;
+  padding-top: $gutter;
+  font-weight: bold;
+}
+
+// Switch phase banner to blue banner
+
+#phase-banner{
+  background-color: transparent;
+  padding: 0;
+  border-top: 10px solid #2B8CC4;
+  max-width: 960px;
+  margin: 0 auto;
+  text-indent: -9999px;
+}

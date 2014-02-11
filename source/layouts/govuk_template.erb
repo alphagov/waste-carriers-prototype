@@ -94,6 +94,7 @@
 
     <%= content_for?(:content) ? yield_content(:content) : yield %>
 
+    <% unless @omit_footer %>
     <footer class="group js-footer" id="footer" role="contentinfo">
 
       <div class="footer-wrapper">
@@ -115,7 +116,8 @@
         </div>
       </div>
     </footer>
-
+    <% end %>
+    
     <!--end footer-->
 
     <div id="global-app-error" class="app-error hidden"></div>

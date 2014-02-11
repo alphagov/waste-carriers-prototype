@@ -1,0 +1,26 @@
+<% wrap_layout :govuk_template do %>
+
+  
+  <% @omit_footer = true %>
+
+  <% content_for :page_title do %>Carer's Allowance Prototype<% end %>
+
+  <% content_for :head do %>
+
+  <!--[if gt IE 8]><!--><link href="<%= asset_path(:css, "/stylesheets/base.css") %>" rel="stylesheet" type="text/css" /><!--<![endif]-->
+  <!--[if IE 6]><link href="<%= asset_path(:css, "/stylesheets/base-ie6.css") %>" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if IE 7]><link href="<%= asset_path(:css, "/stylesheets/base-ie7.css") %>" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if IE 8]><link href="<%= asset_path(:css, "/stylesheets/base-ie8.css") %>" rel="stylesheet" type="text/css" /><![endif]-->
+
+  <script src="<%= asset_path(:js, "/javascripts/jquery.min.js") %>"></script>
+  <script src="<%= asset_path(:js, "/javascripts/prototype.js") %>"></script>
+
+  <% end %>
+
+  <main class="main gov-uk">
+
+        <%= yield %>
+
+  </main>
+
+<% end %>
