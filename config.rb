@@ -23,6 +23,7 @@
 
 page "index.html", :layout => :blank_template
 page "/v1/*", :layout => :v1_template
+page "/v2/*", :layout => :v2_template
 
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {

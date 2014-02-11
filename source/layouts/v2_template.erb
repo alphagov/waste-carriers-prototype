@@ -1,9 +1,8 @@
 <% wrap_layout :govuk_template do %>
 
-  
-  <% @omit_footer = true %>
+  <% content_for :body_classes do %>v1<% end %>
 
-  <% content_for :page_title do %>Prototype: Register as a waste carrier - GOV.UK<% end %>
+  <% content_for :page_title do %>Register as a waste carrier - GOV.UK<% end %>
 
   <% content_for :head do %>
 
@@ -17,9 +16,23 @@
 
   <% end %>
 
+  <% content_for :after_header do %>
+    <%= partial "partials/template-beta-banner" %>
+  <% end %>
+
   <main class="main gov-uk">
 
+  <div class="grid-wrapper">
+    <div class="grid">
+      <div class="inner-block">
+        <h1>
+        <span>Register as a waste carrier</span>
+        <%= current_page.data.title %>
+        </h1>
         <%= yield %>
+      </div>
+    </div>
+  </div>
 
   </main>
 
