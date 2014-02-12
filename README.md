@@ -1,4 +1,4 @@
-# register as a waste carrier prototype
+# GOV.UK Prototypes: Register as a waste carrier
 
 A front-end prototype for the 'Register as a waste carrier' service on GOV.UK.
 
