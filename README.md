@@ -1,6 +1,4 @@
-# GOV.UK Prototypes: Register as a waste carrier
-
-A front-end prototype for the 'Register as a waste carrier' service on GOV.UK.
+Prototypes for the 'Register as a waste carrier' service on GOV.UK.
 
 You can [view the prototype](http://alphagov.github.io/waste-carriers-prototype/) on GitHub.
 
@@ -8,7 +6,7 @@ To discuss these prototypes, [use the wiki](https://github.com/alphagov/waste-ca
 
 ## Dependencies
 
-The prototype uses:
+The prototypes use:
 
 * [Ruby](https://www.ruby-lang.org/en/)
 * the [Middleman](http://middlemanapp.com) static site generator
@@ -16,7 +14,7 @@ The prototype uses:
 * the [ERB](http://middlemanapp.com/basics/templates/) templating language
 * the [GOV.UK Frontend Toolkit](https://github.com/alphagov/govuk_frontend_toolkit)
 
-If you want to easily publish the prototype to GitHub pages you'll also need [Rake](http://rake.rubyforge.org/)
+If you want to easily publish the prototypes to GitHub pages you'll also need [Rake](http://rake.rubyforge.org/)
 
 ## Getting started
 
@@ -40,7 +38,7 @@ You can create and edit files in the source folder and see the changes reflected
 
 ### 3. Publish the static site
 
-If you want to publish the prototype to GitHub Pages, there's a Rake task for that. Just type:
+If you want to publish the prototypes to GitHub Pages, there's a Rake task for that. Just type:
 
 	rake publish
 
