@@ -1,6 +1,6 @@
 Prototypes for the 'Register as a waste carrier' service on GOV.UK.
 
-You can [view the prototype](http://alphagov.github.io/waste-carriers-prototype/) on GitHub.
+You can [view the prototypes](http://alphagov.github.io/waste-carriers-prototype/) on GitHub.
 
 To discuss these prototypes, [use the wiki](https://github.com/alphagov/waste-carriers-prototype/wiki).
 
