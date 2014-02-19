@@ -8,6 +8,10 @@
   @include phase-banner(beta)
 }
 
+#phase-tag{
+  @include phase-tag(beta)
+}
+
 // Postcode lookup
 
 #postcode-lookup{
@@ -51,7 +55,9 @@ dl.two-col{
 // Check and edit details panels
 
 .check-details{
-  margin-bottom: $gutter;
+  margin-bottom: $gutter-half;
+  padding-bottom: $gutter-half;
+  border-bottom: 1px solid $border-colour;
   .edit-details{
     @include core-16;
   }
@@ -60,10 +66,10 @@ dl.two-col{
 // Legal alert
 
 .legal-alert{
-  border-top: 1px solid $border-colour; 
-  background: url(/assets/service_template/icon-important.png) no-repeat scroll 0 $gutter;
+  background: url(/assets/service_template/icon-important.png) no-repeat scroll 0 9px;
   padding-left: 45px;
-  padding-top: $gutter;
+  padding-top: $gutter-third;
+  padding-bottom: $gutter-third;
   font-weight: bold;
 }
 

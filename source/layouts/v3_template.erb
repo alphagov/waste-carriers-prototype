@@ -1,0 +1,42 @@
+<% wrap_layout :govuk_template do %>
+
+  <% content_for :body_classes do %>v3<% end %>
+
+  <% content_for :page_title do %>Register as a waste carrier - GOV.UK<% end %>
+
+  <% content_for :head do %>
+
+  <!--[if gt IE 8]><!--><link href="<%= asset_path(:css, "/stylesheets/base.css") %>" rel="stylesheet" type="text/css" /><!--<![endif]-->
+  <!--[if IE 6]><link href="<%= asset_path(:css, "/stylesheets/base-ie6.css") %>" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if IE 7]><link href="<%= asset_path(:css, "/stylesheets/base-ie7.css") %>" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if IE 8]><link href="<%= asset_path(:css, "/stylesheets/base-ie8.css") %>" rel="stylesheet" type="text/css" /><![endif]-->
+
+  <script src="<%= asset_path(:js, "/javascripts/jquery.min.js") %>"></script>
+  <script src="<%= asset_path(:js, "/javascripts/prototype.js") %>"></script>
+
+  <% end %>
+
+  <% content_for :header_class do %> class="with-proposition"<% end %>
+  <% content_for :proposition_header do %>
+    <%= partial "partials/v3-proposition-header" %>
+  <% end %>
+
+  <% content_for :after_header do %>
+    <%= partial "partials/template-beta-banner" %>
+  <% end %>
+
+  <main class="main gov-uk">
+    <div class="grid-wrapper">
+      <div class="grid">
+        <div class="inner-block">
+          <h1>
+          <span>Step <%= current_page.data.step %></span>
+          <%= current_page.data.title %>
+          </h1>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<% end %>
